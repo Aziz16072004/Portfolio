@@ -13,9 +13,7 @@ function NavBar() {
 	};
 	const handleSetActive = (to) => {
 		const sections = document.querySelectorAll("nav p");
-		console.log(sections);
 		sections.forEach((section) => {
-			console.log(section.id);
 			if (section.id === to+"Link") {
 
 				section.classList.add("active");

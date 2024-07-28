@@ -1,0 +1,35 @@
+{
+    "projects": [
+      {
+        "img": ["cap1", "cap2", "cap3"],
+        "category": "designapp",
+        "name": "Social Media",
+        "link": "https://github.com/Aziz16072004/Social_Media_Project"
+      },
+      {
+        "img": ["cap2"],
+        "category": "webapp"
+      },
+      {
+        "img": ["cap3"],
+        "category": "ardouinoapp"
+      },
+      {
+        "img": ["img1"],
+        "category": "webapp"
+      },
+      {
+        "img": ["img2"],
+        "category": "webapp"
+      },
+      {
+        "img": ["img3"],
+        "category": "webapp"
+      },
+      {
+        "img": ["img3"],
+        "category": "webapp"
+      }
+    ]
+  }
+  
