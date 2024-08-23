@@ -29,8 +29,8 @@ function NavBar() {
         Aos.init({duration:3000})
     }, []);
 	return (
-		<header className="container" data-aos="zoom-in-down">
-			<div className="nav">
+		<header className="container" >
+			<div className="nav" >
 
 				<h2>NOXYLYN</h2>
 			<nav ref={navRef}>
