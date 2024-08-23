@@ -1,11 +1,17 @@
 import introImage from "../imgs/profile_image-removebg-preview.png"
 import Lines from "./Lines"
+import 'aos/dist/aos.css'
+import Aos from 'aos'
+import { useEffect } from "react"
 
 const HomeSection =()=>{
+    useEffect(() => {
+        Aos.init({duration:3000})
+    }, []);
     return(
-        <div className="home container" id="home">
+        <div className="home container" id="home" >
 
-            <div className="HomeContent">
+            <div className="HomeContent" data-aos="zoom-out-up">
                 <div className="sectionStart">
                 <h3>Hello , I'm Chaabani Aziz Web Developer</h3>
                 <Lines/>
@@ -21,7 +27,7 @@ const HomeSection =()=>{
                 
             </div>
             
-            <div className="homeImage">
+            <div className="homeImage" data-aos="zoom-out-left">
                 <img src={introImage}/>
 
             </div>

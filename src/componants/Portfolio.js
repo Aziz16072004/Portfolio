@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import PortfolioPopUp from './PortfolioPopUp';
+import 'aos/dist/aos.css'
+import Aos from 'aos'
 import data from "../data/data.json";
 import img1 from '../imgs/img1.jpg';
 import img2 from '../imgs/img2.jpg';
@@ -56,6 +58,7 @@ const imageMap = {
 };
 
 const Portfolio = () => {
+
   const [items, setItems] = useState([]);
   const [showPopUp, setShowPopUp] = useState(false);
   const [popUp, setPopUp] = useState(null);
@@ -63,11 +66,16 @@ const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
   useEffect(() => {
+    Aos.init({duration:300})
+
+  }, []);
+  useEffect(() => {
     const projectsWithImages = data.projects.map(project => ({
       ...project,
       img: project.img.map(imgName => imageMap[imgName])
     }));
     setItems(projectsWithImages);
+    
   }, []);
   
   const filteredProjects = selectedCategory === 'all'
@@ -110,7 +118,7 @@ const Portfolio = () => {
       </div>
       <div className="portfolioImages">
         {filteredProjects.map((ele, index) => (
-          <div className='Portfoliocard' key={index}>
+          <div className='Portfoliocard' key={index} data-aos="fade-up">
             <img src={ele.img[0]} alt='' />
             <button onClick={() => { setShowPopUp(true); setPopUp(ele); }}>Show more</button>
           </div>

@@ -1,7 +1,9 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../App.css";
 import logo from "../imgs/logo.png";
 import { Link } from 'react-scroll';
+import 'aos/dist/aos.css'
+import Aos from 'aos'
 
 function NavBar() {
 	const navRef = useRef();
@@ -23,9 +25,11 @@ function NavBar() {
 		});
 	};
 
-
+	useEffect(() => {
+        Aos.init({duration:3000})
+    }, []);
 	return (
-		<header className="container">
+		<header className="container" data-aos="zoom-in-down">
 			<div className="nav">
 
 				<h2>NOXYLYN</h2>
