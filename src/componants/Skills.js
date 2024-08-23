@@ -25,7 +25,7 @@ const Skills = ()=>{
 
                     {skills.map((ele,i)=>(
 
-                    <div className="skillItem" data-aos={i % 2 ==0? ("fade-right"):("fade-left")}>
+                    <div className="skillItem" data-aos="fade-right">
                         <div> 
                         <ion-icon name="code-outline"></ion-icon>
                         </div>
