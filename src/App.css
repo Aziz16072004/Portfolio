@@ -185,7 +185,7 @@ nav {
 .homeSectionStartIntroduction{
   color: white;
     font-size: 38px;
-    line-height: 55px;
+    line-height: 75px;
     position: relative;
 
 }
@@ -620,6 +620,9 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
   .container{
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+  .homeSectionStartIntroduction{
+    line-height: 60px;
   }
   .homeSectionStartIntroduction{
     font-size: 24px;
