@@ -28,7 +28,8 @@ body{
   --standardSize:18px;
 }
 .container{
-  padding: 0 8rem;
+  padding-right: 8rem;
+  padding-left: 8rem;
   
 }
 /* #########start navBar style################ */
@@ -159,11 +160,12 @@ nav {
 
 .sectionStart {
   line-height: 45px;
-
+  
+  font-size: 15px;
   color: gray;
   border: 2px solid gray;
   border-radius: 50px;
-  padding: 0 49px;
+  padding: 0 48px;
   width: max-content;
   position: relative;
 }
@@ -183,7 +185,7 @@ nav {
 .homeSectionStartIntroduction{
   color: white;
     font-size: 38px;
-    line-height: 79px;
+    line-height: 55px;
     position: relative;
 
 }
@@ -299,9 +301,10 @@ nav {
 .skill h1 ,.services h1{
   font-size: 54px;
   font-weight:normal;
+  text-align: center;
 }
 .skillItem h1{
-
+  text-align: left;
   font-size: 39px;
 }
 .skillsContainer{
@@ -429,6 +432,10 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
 .portfolioFeature{
   margin: 40px 0 10px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap ;
+  gap: 15px 30px ;
 }
 .portfolioFeature button:hover{
   color: var(--mainGreenColor);
@@ -443,7 +450,7 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
   border: none;
   background-color: transparent;
   font-weight: bold;
-  margin: 0 15px;
+
   font-size: 17px;
   cursor: pointer;
   transition: .5s;
@@ -505,7 +512,7 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
   padding: 12px 0px;
   margin: 25px 0;}
 .popUp img{
-  width: 650px;
+  width: 95%;
   height: 450px;
 }
 .close{
@@ -561,8 +568,25 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
 
 @media only screen and (max-width: 940px) {
   .container {
-    padding: 0 1rem !important;
-}
+    padding-right: 1rem;
+    padding-left: 1rem;}
+
+    .home .sectionStart {
+
+      margin-left: -1.5rem;
+    }
+   
+
+    .portfolioImages img {
+      width: 315px;
+      height: 225px;
+      border-radius: 10px;
+  }
+    .sectionStart {
+      padding: 0 18px;   
+      font-size: 12px;   
+    }
+    
 .socialMedia{
   display: none;
 }
@@ -594,11 +618,12 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
 }
 @media only screen and (max-width: 1024px) {
   .container{
-    padding: 0 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
   .homeSectionStartIntroduction{
-    font-size: 30px ;
-  }
+    font-size: 24px;
+    }
   header .nav-btn {
     position: absolute;
     right: 32px;
@@ -647,10 +672,8 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
   .homeBanner{
     width: 90vw;
   }
-  .popUp img {
-    width: 305px;
-    height: 343px;
-  }
+ 
+  
   .nav{
     position: relative;
   }
@@ -676,9 +699,8 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
   .skillItem{
     width: 60%;
   }
-  .popUp img {
-    width: 447px;
-    height: 356px;
+  .popUp img{
+    height: 350px;
   }
  
 }
