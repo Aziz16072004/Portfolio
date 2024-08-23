@@ -1,24 +1,43 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2620aa94.css",
-    "main.js": "/Portfolio/static/js/main.b7a9422e.js",
-    "static/js/453.419a5d54.chunk.js": "/Portfolio/static/js/453.419a5d54.chunk.js",
+    "main.css": "/Portfolio/static/css/main.c2f184c0.css",
+    "main.js": "/Portfolio/static/js/main.3a7049d2.js",
+    "static/js/453.258b012d.chunk.js": "/Portfolio/static/js/453.258b012d.chunk.js",
     "static/media/img3.jpg": "/Portfolio/static/media/img3.2816690b6d71e9563249.jpg",
     "static/media/img2.jpg": "/Portfolio/static/media/img2.6d04b14c5140b2da5206.jpg",
+    "static/media/ecommerce9.png": "/Portfolio/static/media/ecommerce9.3d5e4a83425b148d777b.png",
+    "static/media/donate2.png": "/Portfolio/static/media/donate2.25188c2d4eca1e9c49f3.png",
     "static/media/introImage.jpg": "/Portfolio/static/media/introImage.718ad5cc1cd3d7523c33.jpg",
+    "static/media/donate1.png": "/Portfolio/static/media/donate1.c59bd7cb4bd9ed163236.png",
+    "static/media/ecommerce1.png": "/Portfolio/static/media/ecommerce1.e6bc7c19ded022f0605d.png",
     "static/media/cap3.png": "/Portfolio/static/media/cap3.f8d01d32a932470bd883.png",
     "static/media/cap1.png": "/Portfolio/static/media/cap1.fb149e4d51ca2db74200.png",
+    "static/media/ecommerce3.png": "/Portfolio/static/media/ecommerce3.5e975fd905856bc206e5.png",
+    "static/media/hamina2.png": "/Portfolio/static/media/hamina2.cb309b588f40c278914b.png",
+    "static/media/ecommerce4.png": "/Portfolio/static/media/ecommerce4.c4cf45d1c0c2de3b4429.png",
+    "static/media/ecommerce7.png": "/Portfolio/static/media/ecommerce7.78571396161eea7dc9fc.png",
+    "static/media/ecommerce8.png": "/Portfolio/static/media/ecommerce8.5c7b1e922f3578d3d228.png",
+    "static/media/ecommerce5.png": "/Portfolio/static/media/ecommerce5.202e3fe54015fcf94e93.png",
     "static/media/img1.jpg": "/Portfolio/static/media/img1.ee2d862da07d493d9944.jpg",
     "static/media/cap2.png": "/Portfolio/static/media/cap2.07b6103160e0ac7c22ef.png",
+    "static/media/ecommerce10.png": "/Portfolio/static/media/ecommerce10.103990f951221b98e138.png",
+    "static/media/ecommerce6.png": "/Portfolio/static/media/ecommerce6.37839eace9b28948f3e1.png",
     "static/media/profile_image-removebg-preview.png": "/Portfolio/static/media/profile_image-removebg-preview.29d0fa724242645afc5a.png",
+    "static/media/hamina4.png": "/Portfolio/static/media/hamina4.cd1b1880772c82f11687.png",
+    "static/media/ecommerce2.png": "/Portfolio/static/media/ecommerce2.c094ab8ff8f82ac285d4.png",
+    "static/media/donate3.png": "/Portfolio/static/media/donate3.9dbf35d3225719b7415a.png",
+    "static/media/hamina3.png": "/Portfolio/static/media/hamina3.994bb70dae5e8c52b92f.png",
+    "static/media/hamina5.png": "/Portfolio/static/media/hamina5.cf58b03f5c8db89f4c3c.png",
+    "static/media/hamina1.png": "/Portfolio/static/media/hamina1.572606b13e624f31d1c2.png",
+    "static/media/donate4.png": "/Portfolio/static/media/donate4.fefc06e51c4b5cd07e29.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.377e2cccf8217fc7264b.png",
     "index.html": "/Portfolio/index.html",
-    "main.2620aa94.css.map": "/Portfolio/static/css/main.2620aa94.css.map",
-    "main.b7a9422e.js.map": "/Portfolio/static/js/main.b7a9422e.js.map",
-    "453.419a5d54.chunk.js.map": "/Portfolio/static/js/453.419a5d54.chunk.js.map"
+    "main.c2f184c0.css.map": "/Portfolio/static/css/main.c2f184c0.css.map",
+    "main.3a7049d2.js.map": "/Portfolio/static/js/main.3a7049d2.js.map",
+    "453.258b012d.chunk.js.map": "/Portfolio/static/js/453.258b012d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2620aa94.css",
-    "static/js/main.b7a9422e.js"
+    "static/css/main.c2f184c0.css",
+    "static/js/main.3a7049d2.js"
   ]
 }
