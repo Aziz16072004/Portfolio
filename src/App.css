@@ -694,8 +694,8 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
 }
 @media only screen and (max-width: 1224px) {
   .home{
-    padding-top: 135px;
-  }
+    padding-top: 55px;
+    }
   .skillItem{
     width: 60%;
   }
