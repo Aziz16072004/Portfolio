@@ -2,34 +2,35 @@
     "projects": [
       {
         "img": ["cap1", "cap2", "cap3"],
-        "category": "designapp",
+        "category": "webapp",
         "name": "Social Media",
-        "link": "https://github.com/Aziz16072004/Social_Media_Project"
+        "link": ["https://github.com/Aziz16072004/Social_Media_Project"]
       },
       {
-        "img": ["cap2"],
-        "category": "webapp"
+        "img": ["donate1", "donate2", "donate3","donate4"],
+        "category": "webapp",
+        "name": "Donate",
+        "link": ["https://github.com/Aziz16072004/donate","https://aziz16072004.github.io/donate/"]
       },
       {
-        "img": ["cap3"],
-        "category": "ardouinoapp"
+        "img": ["hamina1", "hamina2", "hamina3","hamina4","hamina5"],
+        "category": "webapp",
+        "name": "Hamina",
+        "link": ["https://github.com/Aziz16072004/7amina","https://aziz16072004.github.io/7amina/"]
       },
       {
-        "img": ["img1"],
-        "category": "webapp"
+        "img": ["ecommerce1", "ecommerce2", "ecommerce3","ecommerce4","ecommerce5","ecommerce6", "ecommerce7", "ecommerce8","ecommerce9","ecommerce10"],
+        "category": "webapp",
+        "name": "E-commerce",
+        "link": ["https://github.com/Aziz16072004/e-commerce","https://aziz16072004.github.io/e-commerce/"]
       },
       {
-        "img": ["img2"],
-        "category": "webapp"
-      },
-      {
-        "img": ["img3"],
-        "category": "webapp"
-      },
-      {
-        "img": ["img3"],
-        "category": "webapp"
+        "img": ["ecommerce1", "ecommerce2", "ecommerce3","ecommerce4","ecommerce5","ecommerce6", "ecommerce7", "ecommerce8","ecommerce9","ecommerce10"],
+        "category": "ardouinoapp",
+        "name": "Line follower robot",
+        "link": ["https://github.com/Aziz16072004/Line-follower-robot"]
       }
+      
     ]
   }
   

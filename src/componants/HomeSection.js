@@ -1,48 +1,26 @@
 import introImage from "../imgs/profile_image-removebg-preview.png"
+import Lines from "./Lines"
 
 const HomeSection =()=>{
     return(
         <div className="home container" id="home">
 
             <div className="HomeContent">
-                <h3>Hi , I am</h3>
-                <h1>Chaabani Aziz</h1>
-                <h3>Web Developer</h3>
-                <p>It uses the media rule to include a block of CSS properties only if a certain condition is true.It uses the media rule to include a block of CSS properties only if a certain condition is true.</p>
-                <div className="homeButtons">
-                    <button className="btn1">Download CV</button>
-                    <button className="btn2">Contact me</button>
+                <div className="sectionStart">
+                <h3>Hello , I'm Chaabani Aziz Web Developer</h3>
+                <Lines/>
+
                 </div>
+                <div className="homeSectionStartIntroduction">
+                    <h1>
+                        im a <span>developer</span> <br/> and programmer based in trunisia
+                    </h1>
+                    <Lines/>
+                    <p>Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre</p>
+                </div>
+                
             </div>
-            <div className="homeBanner">
-                <div className="homeBannerItem">
-                    <div className="iconBox">
-                        <ion-icon name="people-outline"></ion-icon>
-                    </div>
-                    <div>
-                        <h2>8 Years Job</h2>
-                        <h4>Experinece</h4>
-                    </div>
-                </div>
-                <div className="homeBannerItem middleElement">
-                    <div className="iconBox">
-                        <ion-icon name="people-outline"></ion-icon>
-                    </div>
-                    <div>
-                        <h2>8 Years Job</h2>
-                        <h4>Experinece</h4>
-                    </div>
-                </div>
-                <div className="homeBannerItem">
-                    <div className="iconBox">
-                        <ion-icon name="people-outline"></ion-icon>
-                    </div>
-                    <div>
-                        <h2>8 Years Job</h2>
-                        <h4>Experinece</h4>
-                    </div>
-                </div>
-            </div>
+            
             <div className="homeImage">
                 <img src={introImage}/>
 

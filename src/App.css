@@ -4,26 +4,48 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Titillium Web", sans-serif;
+	font-family: "Urbanist", sans-serif;
+
 }
 
-
+body{
+  color: white;
+}
+::selection {
+  background: transparent;
+}
 :root {
+  --mainGreenColor:#28e98c;
   --mainBlueColor:#43a7ff;
+  --mainBlueColorLight:#43a7ffb0;
 	--mainColor: white;
 	--mainColorLight: #5767aa;
   --secondaryBackground:#f1f4fb;
 	--secondaryColor: #43a7ff;
 	--textColor: #283b60;
   --grayColor:#f2f2f4;
+  --mainGrayColor:#202020;
+  --standardSize:18px;
 }
 .container{
   padding: 0 8rem;
   
 }
 /* #########start navBar style################ */
-.active {
- color: var(--mainBlueColor) !important;
+a.active {
+ background-color: var(--mainGreenColor) !important;
+ color: white;
+ 
+}
+.nav{
+  position: relative;
+}
+nav {
+  background-color: var(--mainGrayColor);
+  border-radius: 43px;
+  border: 2px solid rgba(94, 94, 94, 0.681);
+  padding: 18px 50px;
+  margin-top: 10px;
 }
 header {
   position: fixed;
@@ -32,16 +54,24 @@ header {
   width: 100%;
   display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: white;
-	color: var(--textColor);
+	background-color: transparent;
+  color:white;
+	
   font-weight: bold;
 }
-
+header a{
+  color:white;
+  padding: 12px 30px;
+  border-radius: 32px;
+}
+nav h2 {
+  margin: 0 20px;
+}
 nav p {
-  margin: 0 1rem;
+  margin: 0 .5rem;
 	color: var(--textColor);
 	border: none;
   background-color: transparent;
@@ -64,35 +94,98 @@ header .nav-btn {
 	background: transparent;
 	border: none;
 	outline: none;
-	color: var(--textColor);
+	color: white;
 	display: none;
 	opacity: 0;
-	font-size: 1.8rem;
+	font-size: 2rem;
 }
 
 header div,
 nav {
   display: flex;
 	align-items: center;
+  justify-content: center;
 }
 
 /* #########end navBar style################ */
 /* #########start home section style################ */
 .home{
   position: relative;
-  height: 80vh;
-  background-color: var(--grayColor);
+  min-height: 100vh;
+  background: rgb(23,29,25);
+  background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, rgba(23,29,25,1) 83%);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.homeSectionStartIntroduction p{
+  font-size: var(--standardSize);
 }
 .HomeContent{
   width: 50vw;
   line-height: 45px;
 }
+.nav h2:nth-child(1){
+  display:none;
+}
+.lines{
+  position: absolute;
+}
+.lines img{
+  position: absolute;
+}
+.line1{
+  left: 17px;
+    top: 2px;
+    height: 33px;
+    width: 31px;
+    transform: rotate(6deg);
+}
+.line2{
+  left: 9px;
+    top: -19px;
+    height: 46px;
+    width: 31px;
+    transform: rotate(-14deg);
+}
+.line3{
+  left: -5px;
+  top: -7px;
+  height: 28px;
+  width: 29px;
+  transform: rotate(-46deg);
+}
 
-.HomeContent h3{
-  color: var(--mainColorLight);
+.sectionStart {
+  line-height: 45px;
+
+  color: gray;
+  border: 2px solid gray;
+  border-radius: 50px;
+  padding: 0 49px;
+  width: max-content;
+  position: relative;
+}
+
+.sectionStart .lines{
+  right: 13px;
+  top: -21px;
+}
+.homeSectionStartIntroduction span{
+  color:var(--mainGreenColor);
+}
+.homeSectionStartIntroduction .lines{
+  bottom: -21px;
+    left: 9px;
+    transform: rotate(183deg);
+}
+.homeSectionStartIntroduction{
+  color: white;
+    font-size: 38px;
+    line-height: 79px;
+    position: relative;
+
 }
 .HomeContent p{
   color: gray;
@@ -147,6 +240,7 @@ nav {
 }
 .socialMedia ion-icon{
   font-size: 30px;
+  color: white;
 }
 .homeImage img{
   width: 400px;
@@ -188,87 +282,137 @@ nav {
 }
 /* #########end home section style ################ */
 
+/* start skills */
+  .skill , .services {
+    background: rgb(23,29,25);
+  background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, rgba(23,29,25,1) 83%);
+  padding: 65px 0;
+    min-height: 100vh;
+    gap: 51px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-/* #########start into section style################ */
-.into{
+  }
+
+.skill h1 ,.services h1{
+  font-size: 54px;
+  font-weight:normal;
+}
+.skillItem h1{
+
+  font-size: 39px;
+}
+.skillsContainer{
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 18%;
-  gap: 10%;
-  height: 90vh;
-  
+  flex-wrap: wrap;
+  gap: 20px;
+
 }
-.introImage img {
-  width: 98%;
-  height: 98%;
-  z-index: 100;
+.skillItem::before{
+  content: "75%";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  background-color: #272727;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid white;
+}
+.progress span{
+  background-color: #28e98c;
+  position: absolute;
+  
+  height: 100%;
+}
+.progress{
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 30px*2);
+    height: 7px;
+    border-radius: 15px;
+    border: 1px solid white;
+  background-color: #272727;
+}
+.skillItem{
+  position: relative;
+  background-color: var(--mainGrayColor);
+  width: 40%;
+  padding: 40px 30px;
   border-radius: 10px;
-  }
-      .introImage{
-        width: 350px;
-        height: 550px;
-        background-color: transparent;
-        position: relative;
-        border-radius: 10px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-      }
-      .introImage::before{
-        content: "";
-        position: absolute;
-        background-color: #43a7ff;
-        width: 50%;
-        height: 150%;
-        /* z-index: ; */
-        transform: rotate(-50deg);
-        
-      }      
-      
-      .introInformation p{
-        text-wrap: balance;
-      }
-      .introInformation{
-        margin: 20px 0;
-      }
-      .introInformation span{
-        padding: 25px;
-      }
-      .intoContent label{
-        font-weight: bold;
-      }
-      
-      .intoContent ion-icon{
-        color: var(--mainBlueColor);
-        font-weight: bold;
-        font-size: 20px;
-       padding-right: 10px;
-      }
-
-      .myInterest div p {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-      }
-      .myInterest div{
-        display: flex;
-        margin: 8px 0;
-        gap: 20px;
-      }
-      /* #########end into section style ################ */
-      
-      
-      /* start portfolio style */
-      .portfolio{
-        display: flex;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-color: var(--secondaryBackground);
-        flex-direction: column;
+  font-size: 39px;
+  display: flex;
+  gap: 20px;
+  justify-content: left;
   align-items: center;
+}
+
+/* end skills */
+
+/* start services */
+
+
+.serviceItem h4{
+  font-size: 21px;
+}
+.serviceItem{
+  width:325px;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction:column ;
+  align-items: center;
+  gap: 20px;
+  background-color: #181818;
+  border-radius: 15px;
+  position: relative;
+  padding: 40px 20px 10px;
+}
+.servicesContainer{
+  display: flex;
+  justify-content: center;
+  gap:61px 30px ;
+  
+  flex-wrap: wrap;
+}
+.serviceImg {
+  background-color: black;
+  max-width: min-content;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top:-10px;
+  transform: rotate(45deg) translateX(-50%);
+}
+.serviceImg img{
+  transform: rotate(-45deg);
+  width: 32px;
+  height: 32px;
+}
+
+
+/* end services */
+      /* start portfolio style */
+
+
+.portfolio{
+  
+   padding-top: 60px;
+   padding-bottom: 60px;
+  background: rgb(23,29,25);
+background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, rgba(23,29,25,1) 83%);
+
+  min-height: 100vh;
+  gap: 51px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 .portfolioImages {
   display: flex;
@@ -287,10 +431,13 @@ nav {
   text-align: center;
 }
 .portfolioFeature button:hover{
-  color: var(--mainBlueColor);
+  color: var(--mainGreenColor);
 }
 .portfolio h4{
-  color: var(--mainBlueColor);
+  color: var(--mainGreenColor);
+}
+.portfolioFeature button{
+  color: white;
 }
 .portfolioFeature button{
   border: none;
@@ -301,9 +448,10 @@ nav {
   cursor: pointer;
   transition: .5s;
 }
-.portfolio .showMore , .visit{
- background-color: var(--mainBlueColor);
+.portfolio .showMore , .visit a{
+ background-color: var(--mainGreenColor);
  color: white;
+ 
  border: none;
  padding: 15px 40px;
  border-radius: 40px;
@@ -322,7 +470,7 @@ nav {
   justify-content: center;
   align-items: center;
   position: absolute;
-  background-color: #283b6087;
+  background-color: var(--mainGreenColor);
   color: white;
   font-size: 19px;
   font-weight: 700;
@@ -340,26 +488,29 @@ nav {
 
 }
 .popUp{
+  background: rgb(23,29,25);
+  background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, rgba(23,29,25,1) 83%);
+  
   position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
-  /* height: 90vh; */
-  width: 70vw;
+  height: 83vh;
+  width: 56vw;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 70px 50px;
-}
+  padding: 12px 0px;
+  margin: 25px 0;}
 .popUp img{
-  width: 350px;
-    height: 250px;
+  width: 650px;
+  height: 450px;
 }
 .close{
   position: absolute;
+  color: white;
   top:10px;
   right: 10px;
   font-size: 25px;
@@ -371,19 +522,22 @@ nav {
 
   transition: .5s;
 }
+.visit a{
+  cursor: pointer;
+  text-decoration: none;
+
+}
 .visit{
-  position: absolute;
-  bottom: 10px;
-  right: 50%;
+ 
+ 
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  gap: 5px;
-  text-decoration: none;
-  transform: translateX(50%);
+  gap: 30px;
+ 
 }
-.visit:hover ion-icon{
+
+.visit a:hover ion-icon{
   transform: translateX(10px);
 }
 .popUpContainer {
@@ -391,7 +545,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 500;
-  background-color: #cececec9;
+  background-color: #2d2d2df7;
   height: 100vh;
   width: 100vw;
 }
@@ -405,11 +559,17 @@ nav {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 940px) {
+  .container {
+    padding: 0 1rem !important;
+}
+.socialMedia{
+  display: none;
+}
   .popUp{
     width: 90vw;
   }
-  .home img{
+  .homeImage img{
     display: none;
   }
   .introImage{
@@ -422,23 +582,37 @@ nav {
   .introInformation span{
     padding: 0 5px;
   }
+  .skillItem{
+    width: 90% !important;
+  }
+  .serviceItem{
+    width: 90%;
+  }
 }
 .activeBtn{
-  color: var(--mainBlueColor);
+  color: var(--mainGreenColor) !important;
 }
 @media only screen and (max-width: 1024px) {
   .container{
     padding: 0 3rem;
   }
-
+  .homeSectionStartIntroduction{
+    font-size: 30px ;
+  }
   header .nav-btn {
-   display: block;
+    position: absolute;
+    right: 32px;
+    top: 10px;
+    display: block;
 		opacity: 1;
 	}
   
+	header nav h2 {
+    
+  }
 	header nav {
     position: fixed;
-		top: -100vh;
+		top: -150vh;
 		left: 0;
 		height: 100%;
 		width: 100%;
@@ -448,22 +622,24 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainColor);
+		
 		transition: 1s;
-	}
 
+	}
 	header .responsive_nav {
-		transform: translateY(100vh);
+    transform: translateY(149vh);
 	}
-
+  
 	nav .nav-close-btn {
-		position: absolute;
+    position: absolute;
 		top: 2rem;
 		right: 2rem;
 	}
-
+  .nav h2:nth-child(1){
+    display: block;
+  }
 	nav a {
-		font-size: 1.5rem;
+    font-size: 1.5rem;
 	}
   .HomeContent{
     width: 100vw;
@@ -471,4 +647,38 @@ nav {
   .homeBanner{
     width: 90vw;
   }
+  .popUp img {
+    width: 305px;
+    height: 343px;
+  }
+  .nav{
+    position: relative;
+  }
+   .nav{
+    background-color: var(--mainGrayColor);
+    border-radius: 43px;
+    display: flex;
+    justify-content: space-between;
+
+    width: 85vw;
+    border: 2px solid rgba(94, 94, 94, 0.681);
+    padding: 18px 60px;
+    margin-top: 10px;
+  }
+  header nav h2{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1224px) {
+  .home{
+    padding-top: 135px;
+  }
+  .skillItem{
+    width: 60%;
+  }
+  .popUp img {
+    width: 447px;
+    height: 356px;
+  }
+ 
 }
