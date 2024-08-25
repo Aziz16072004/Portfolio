@@ -29,7 +29,7 @@ function NavBar() {
         Aos.init({duration:3000})
     }, []);
 	return (
-		<header className="container" >
+		<header className="container" data-aos="fade-down">
 			<div className="nav" >
 
 				<h2>NOXYLYN</h2>

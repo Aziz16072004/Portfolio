@@ -244,11 +244,32 @@ nav {
   font-size: 30px;
   color: white;
 }
-.homeImage img{
-  width: 400px;
-  height: 600px;
-  
+.homeImage{
+  position: relative;
+  width: 460px;
+  height: 460px;
+  border-radius: 200px;
 }
+.introImageWrapper{
+  width: 460px;
+  height: 460px;
+  border-radius: 300px;
+  overflow: hidden;
+}
+.cercle{
+  position: absolute;
+  top: 20px;
+  left: 4px;
+  z-index: 100;
+  width: 455px !important;
+  animation: example 8s ease-in-out .5s infinite alternate;
+
+}
+@keyframes example {
+  from {transform: rotate(0);}
+  to {transform: rotate(300deg);}
+}
+
 .socialMedia{
   position: absolute;
   display: flex;
@@ -285,10 +306,11 @@ nav {
 /* #########end home section style ################ */
 
 /* start skills */
-  .skill , .services {
+  .skill , .services,.resume  {
     background: rgb(23,29,25);
   background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, rgba(23,29,25,1) 83%);
-  padding: 65px 0;
+  padding-top: 65px;
+  padding-bottom: 65px;
     min-height: 100vh;
     gap: 51px;
       display: flex;
@@ -399,7 +421,120 @@ nav {
 
 
 /* end services */
-      /* start portfolio style */
+
+
+/* start resume */
+.resume{
+  flex-direction: row;
+}
+.skillContantItem{
+    border-radius: 8px;
+    background: var(--mainGrayColor);
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+.resumeFeature h1{
+  font-size: 40px;
+
+}
+.resumeFeature p{
+  margin: 30px 0;
+}
+.AboutMeItem{
+  color: gray;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 22px 0;
+
+}
+.AboutMe span{
+  color: white;
+  margin-left: 10px;
+}
+.AboutMe{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 60px;
+}
+
+.resumeFeature button{
+  width: 100%;
+  padding: 15px 0;
+  margin: 10px 0;
+  border-radius: 10px;
+  background-color: var(--mainGrayColor);
+  color: white;
+  font-size: 15px;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1.5px; 
+  cursor: pointer;
+}
+.activeItem{
+  background-color: var(--mainGreenColor) !important;
+}
+.resumeContant{
+  width: 70vw;
+}
+.resumeContantContainer{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3%;
+  row-gap: 20px;
+  
+}
+.resumeContant{
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.resumeContantItem{
+  background-color: var(--mainGrayColor);
+  width: 40%;
+    height: 200px;
+  padding: 25px 20px;
+  border-radius: 10px;
+  position: relative;
+
+}
+.resumeContantItemPath span{
+  font-size: 100px;
+  color: var(--mainGreenColor);
+  margin-right: 10px;
+  
+
+}
+.resumeContantItemName{
+  margin-top: 15px;
+
+}
+.resumeContantItemDate{
+  color: var(--mainGreenColor);
+  font-weight: bold;
+}
+.resumeContantItemPath{
+  position: absolute;
+  
+  bottom: 10px;
+  left: 10px;
+}
+.resumeFeature{
+  width: 30vw;
+  
+}
+
+
+/* end resume */
+
+
+
+/* start portfolio style */
 
 
 .portfolio{
@@ -566,6 +701,13 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
 
 
 
+@media only screen and (max-width: 650px) {
+  .resumeContantItem{
+    
+    width: 100% !important;
+  }
+
+}
 @media only screen and (max-width: 940px) {
   .container {
     padding-right: 1rem;
@@ -575,8 +717,20 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
 
       margin-left: -1.5rem;
     }
-   
-
+    .AboutMe{
+      height: auto;
+      flex-wrap: nowrap;
+    }
+    .homeImage{
+      width: 320px;
+      height: 320px;
+    }
+    .resumeContant{
+      width: 80vw;
+    }
+    .resumeFeature{
+      width: 80vw;
+    }
     .portfolioImages img {
       width: 315px;
       height: 225px;
@@ -593,9 +747,26 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
   .popUp{
     width: 90vw;
   }
-  .homeImage img{
-    display: none;
-  }
+.resume{
+  flex-direction: column;
+}
+.resumeContantItem{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  text-align: center;
+  width: 45%;
+}
+.resumeContantItemPath{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home{
+  flex-direction: column-reverse;
+  gap:50px;
+  
+}
+
   .introImage{
     width: 250px;
     height: 520px;
@@ -621,6 +792,20 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
     padding-right: 2rem;
     padding-left: 2rem;
   }
+  .homeImage img {
+    width: 320px;
+  }
+  
+  .introImageWrapper{
+    width: 320px;
+    height: 320px;
+  }
+  .cercle{
+    
+    top: 8px;
+    left: -2px;
+    width: 325px !important;
+  }
   .homeSectionStartIntroduction{
     line-height: 60px;
   }
@@ -634,10 +819,6 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
     display: block;
 		opacity: 1;
 	}
-  
-	header nav h2 {
-    
-  }
 	header nav {
     position: fixed;
 		top: -150vh;
@@ -670,7 +851,7 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
     font-size: 1.5rem;
 	}
   .HomeContent{
-    width: 100vw;
+    width: 80vw;
   }
   .homeBanner{
     width: 90vw;

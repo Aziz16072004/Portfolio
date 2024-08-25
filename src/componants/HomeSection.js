@@ -1,4 +1,5 @@
 import introImage from "../imgs/profile_image-removebg-preview.png"
+import cercle from "../imgs/cercle.png"
 import Lines from "./Lines"
 import 'aos/dist/aos.css'
 import Aos from 'aos'
@@ -11,7 +12,7 @@ const HomeSection =()=>{
     return(
         <div className="home container" id="home" >
 
-            <div className="HomeContent" data-aos="zoom-out-up">
+            <div className="HomeContent"    data-aos="fade-up">
                 <div className="sectionStart">
                 <h3>Hello , I'm Chaabani Aziz Web Developer</h3>
                 <Lines/>
@@ -27,9 +28,14 @@ const HomeSection =()=>{
                 
             </div>
             
-            <div className="homeImage" data-aos="zoom-out-left">
-                <img src={introImage}/>
 
+            <div className="homeImage">
+            <div className="introImageWrapper">
+                <img src={introImage} />
+            </div>
+                <img className="cercle" src={cercle}/>
+
+           
             </div>
             <div className="socialMedia">
             <ion-icon name="logo-facebook"></ion-icon>
