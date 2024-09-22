@@ -6,58 +6,47 @@ function Resume() {
     const content = {
         experience: {
             name: "Experience",
-            description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's",
             items: [
                 {
                     date: "2023",
-                    name: "FullStack Web development bootcamp",
-                    path: "codecademy",
+                    name: "a trainer at WeCode",
+                    path: "Youth Center-tunis",
                 },
                 {
                     date: "2023",
-                    name: "FullStack Web development bootcamp",
-                    path: "codecademy",
+                    name: "Member in GDSC (Google Developer Student Club)",
+                    path: "Manar University",
                 },
                 {
                     date: "2023",
-                    name: "FullStack Web development bootcamp",
-                    path: "codecademy",
+                    name: "Member in Discovery Club Junior",
+                    path: "Manouba",
                 },
                 {
-                    date: "2023",
-                    name: "FullStack Web development bootcamp",
-                    path: "codecademy",
-                },
+                    date: "2021",
+                    name: "Member in  Youth Center ",
+                    path: "Youth Center-Tunis",
+                }
             ],
         },
         education: {
             name: "Education",
             items: [
                 {
-                    date: "2023",
-                    name: "FullStack Web development bootcamp",
-                    path: "codecademy",
+                    date: "2023-2025",
+                    name: "currently studying Computer Engineering",
+                    path: "Manar University",
                 },
                 {
                     date: "2023",
-                    name: "FullStack Web development bootcamp",
-                    path: "codecademy",
+                    name: "received my high school diploma in Computer Science ",
+                    path: "Tunis",
                 },
-                {
-                    date: "2023",
-                    name: "FullStack Web development bootcamp",
-                    path: "codecademy",
-                },
-                {
-                    date: "2023",
-                    name: "FullStack Web development bootcamp",
-                    path: "codecademy",
-                },
+                
             ],
         },
         skills: {
             name: "Skills",
-            description: "List your skills here.",
             items: [
                 
                 { name: "JavaScript" , icon:"logo-javascript" },
@@ -65,17 +54,17 @@ function Resume() {
                 { name: "CSS" , icon:"logo-css3" },
                 { name: "Node.js" , icon:"logo-nodejs" },
                 { name: "HTML" , icon:"logo-html5" },
+                { name: "Ardouino" , icon:"hardware-chip-outline" },
             ],
         },
         aboutMe: {
             name: "About Me",
-            description: "Write a brief introduction about yourself.",
             items:[
                 {name : "Name" , value:"Aziz Chaabani"},
                 {name : "Experience" , value:"0 year"},
                 {name : "Nationality" , value:"Tunisian"},
                 {name : "Freelance" , value:"Available"},
-                {name : "Phone" , value:"(212) 50 551 663"},
+                {name : "Phone" , value:"(216) 50 551 663"},
                 {name : "Email" , value:"mouhamedazizchaabani@gmail.com"},
                 {name : "Languages" , value:"Arab , English , Frensh "},
             ]
@@ -98,7 +87,7 @@ function Resume() {
         <div className="resume container">
             <div className="resumeFeature" data-aos="fade-up">
                 <h1>Why Hire me?</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                <p>With my strong background in Web Development, hands-on experience as a trainer, and commitment to continuous learning, I am confident that I can bring value to your team and help drive impactful results</p>
                 <div>
                     {Object.keys(content).map((key) => (
                         <button
@@ -115,7 +104,6 @@ function Resume() {
             {resumeContent.name && (
                 <div className="resumeContant" data-aos="fade-up">
                     <h1>{resumeContent.name}</h1>
-                    {resumeContent.description && <p>{resumeContent.description}</p>}
                     <div className="resumeContantContainer">
                     {(resumeContent.name === "Experience" || resumeContent.name === "Education") &&
     resumeContent.items.map((item, index) => (

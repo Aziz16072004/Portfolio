@@ -5,7 +5,7 @@ import 'aos/dist/aos.css'
 import Aos from 'aos'
 
 const Skills = ()=>{
-    const skills =[{name : "Web Development", value:"75%"} , {name : "Multi Media", value:"25%"} , {name : "Robotic", value:"30%"},{name : "Mobile Development", value:"0%"}]
+    const skills =[{name : "Web Development", value:"75%"} , {name : "Multi Media", value:"25%"} , {name : "Robotic", value:"45%"},{name : "Mobile Development", value:"0%"}]
     useEffect(() => {
         Aos.init({duration:3000})
     }, []);
@@ -26,6 +26,7 @@ const Skills = ()=>{
                     {skills.map((ele,i)=>(
 
                     <div className="skillItem" data-aos="fade-right">
+                        <span className="persentage">{ele.value}</span>
                         <div> 
                         <ion-icon name="code-outline"></ion-icon>
                         </div>

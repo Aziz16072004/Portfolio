@@ -20,10 +20,12 @@ const HomeSection =()=>{
                 </div>
                 <div className="homeSectionStartIntroduction">
                     <h1>
-                        im a <span>developer</span> <br/> and programmer based in trunisia
+                        im a <span>developer</span> <br/> and programmer based in tunisia
                     </h1>
                     <Lines/>
-                    <p>Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre</p>
+                    <p>I specialize in building efficient, scalable solutions and seamless user experiences.
+Committed to writing clean, maintainable code, I stay up-to-date with the latest industry practices.
+Driven by curiosity, I continuously explore new technologies to deliver innovative and impactful solutions.</p>
                 </div>
                 
             </div>
@@ -33,15 +35,15 @@ const HomeSection =()=>{
             <div className="introImageWrapper">
                 <img src={introImage} />
             </div>
-                <img className="cercle" src={cercle}/>
+                {/* <img className="cercle" src={cercle}/> */}
 
            
             </div>
             <div className="socialMedia">
-            <ion-icon name="logo-facebook"></ion-icon>
-            <ion-icon name="logo-twitter"></ion-icon>
-            <ion-icon name="mail-outline"></ion-icon>
-            <ion-icon name="logo-pinterest"></ion-icon>
+            <a href="https://www.facebook.com/aziz.chaabani.357" ><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="" ><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="" ><ion-icon name="mail-outline"></ion-icon></a>
+            <a href="" ><ion-icon name="logo-pinterest"></ion-icon></a>
             </div>
         </div>
     )

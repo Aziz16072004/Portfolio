@@ -27,29 +27,17 @@ function Services(){
                     <img src={softwareImg}/>
                 </div>
                 <h4>Web Development</h4>
-                <p>Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur</p>
+                <p>I offer professional web development services, creating responsive, user-friendly websites that meet your business needs. Whether it's a simple landing page or a complex web application, I build scalable, efficient solutions using modern technologies, ensuring high performance and a great user experience.</p>
             </div>
-            <div className="serviceItem" data-aos="fade-up">
-                <div className="serviceImg">
-                    <img src={design}/>
-                </div>
-                <h4>Multi Media</h4>
-                <p>Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur</p>
-            </div>
+            
             <div className="serviceItem"  data-aos="fade-up">
                 <div className="serviceImg">
                     <img src={robot}/>
                 </div>
                 <h4>Robotic</h4>
-                <p>Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur</p>
+                <p>I provide robotics solutions tailored to automate and optimize processes, combining cutting-edge technology with innovative design. From prototyping to final deployment, I develop intelligent systems that improve efficiency, precision, and functionality in various applications.</p>
             </div>
-            <div className="serviceItem" data-aos="fade-up">
-                <div className="serviceImg">
-                    <img src={developer}/>
-                </div>
-                <h4>Mobile Development</h4>
-                <p>Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur</p>
-            </div>
+           
             </div>
         </div>
     )

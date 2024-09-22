@@ -1,35 +1,38 @@
 {
     "projects": [
       {
-        "img": ["cap1", "cap2", "cap3"],
-        "category": "webapp",
+        "img":"cap1",
         "name": "Social Media",
-        "link": ["https://github.com/Aziz16072004/Social_Media_Project"]
+        "description":"A social media website is an online platform where users create, share, and interact with content, connect with others, and engage in discussions",
+        "link": {"codesrc" : "https://github.com/Aziz16072004/Social-Media"},
+        "technologies":["React js","Node js" ,"Mongodb"],
+        "status":"incomplete"
       },
       {
-        "img": ["donate1", "donate2", "donate3","donate4"],
-        "category": "webapp",
+        "img": "donate1",
         "name": "Donate",
-        "link": ["https://github.com/Aziz16072004/donate","https://aziz16072004.github.io/donate/"]
+        "description":"A donation website allows users to contribute funds to charitable causes or projects, often providing various payment options and transparent goals. It facilitates online giving, tracks progress, and connects donors with organizations or individuals in need.",
+        "link": {"codesrc":"https://github.com/Aziz16072004/donate","linksrc":"https://aziz16072004.github.io/donate/"},
+        "technologies":["React js"],
+        "status":"completed"
       },
       {
-        "img": ["hamina1", "hamina2", "hamina3","hamina4","hamina5"],
-        "category": "webapp",
+        "img":"hamina1",
         "name": "Hamina",
-        "link": ["https://github.com/Aziz16072004/7amina","https://aziz16072004.github.io/7amina/"]
+        "description":"Our website is an incubator and a common ground for the abused, serving as a gateway to open communication between both parties.",
+        "link": {"codesrc":"https://github.com/Aziz16072004/7amina","linksrc":"https://aziz16072004.github.io/7amina/"},
+        "technologies":["React js"],
+        "status":"completed"
       },
       {
-        "img": ["ecommerce1", "ecommerce2", "ecommerce3","ecommerce4","ecommerce5","ecommerce6", "ecommerce7", "ecommerce8","ecommerce9","ecommerce10"],
-        "category": "webapp",
+        "img": "ecommerce1",
         "name": "E-commerce",
-        "link": ["https://github.com/Aziz16072004/e-commerce","https://aziz16072004.github.io/e-commerce/"]
-      },
-      {
-        "img": ["ecommerce1", "ecommerce2", "ecommerce3","ecommerce4","ecommerce5","ecommerce6", "ecommerce7", "ecommerce8","ecommerce9","ecommerce10"],
-        "category": "ardouinoapp",
-        "name": "Line follower robot",
-        "link": ["https://github.com/Aziz16072004/Line-follower-robot"]
+        "description":"An e-commerce website enables users to browse, purchase, and sell products or services online, offering secure payment and delivery options. It streamlines the shopping experience with features like product catalogs, reviews, and personalized recommendations.",
+        "link": {"codesrc":"https://github.com/Aziz16072004/e-commerce","linksrc":"https://aziz16072004.github.io/e-commerce/"},
+        "technologies":["HTML","CSS" ,"JS"],
+        "status":"incomplete"
       }
+     
       
     ]
   }
