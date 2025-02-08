@@ -36,6 +36,15 @@ body{
 a.active {
  background-color: var(--mainGreenColor) !important;
  color: white;
+}
+
+
+.projectFeature a:hover ,.projectTechnologies h3:hover{
+
+  color: var(--mainGreenColor) !important;
+}
+nav p a:hover{
+  background-color: var(--mainGreenColor) !important;
  
 }
 .nav{
@@ -67,6 +76,7 @@ header a{
   color:white;
   padding: 12px 30px;
   border-radius: 32px;
+  transition: .5s;
 }
 nav h2 {
   margin: 0 20px;
@@ -240,9 +250,22 @@ nav {
   transform: translateX(-50%);
 
 }
+.socialMedia ion-icon[name="logo-facebook"]:hover{
+  color: #0866FF;
+}
+.socialMedia ion-icon[name="logo-twitter"]:hover{
+  color: #24a4f2;
+}
+.socialMedia ion-icon[name="mail-outline"]:hover{
+  color: red;
+}
+.socialMedia ion-icon[name="logo-linkedin"]:hover{
+  color: #0A66C2;
+}
 .socialMedia ion-icon{
   font-size: 30px;
   color: white;
+  transition: .5s;
 }
 .homeImage{
   position: relative;
@@ -382,6 +405,7 @@ nav {
     border: 1px solid white;
   background-color: #272727;
 }
+
 .skillItem{
   position: relative;
   background-color: var(--mainGrayColor);
@@ -456,6 +480,7 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 45px;
+    transition: .5s;
 }
 .resumeFeature h1{
   font-size: 40px;
@@ -483,7 +508,12 @@ nav {
   column-gap: 60px;
 }
 
+.resumeFeature button:hover{
+  background-color: var(--mainGreenColor) ;
+  color: white;
+}
 .resumeFeature button{
+  transition: .5s;
   width: 100%;
   padding: 15px 0;
   margin: 10px 0;
@@ -649,7 +679,7 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
   border-radius: 20px;
 }
 .projectFeature a{
-
+  transition: .5s;
   color: white;
   text-decoration: none;
 }
@@ -665,8 +695,12 @@ background: linear-gradient(336deg, rgba(23,29,25,1) 11%, rgba(16,18,17,1) 50%, 
   flex-direction: column;
   gap: 20px;
 }
+.projectTechnologies h3{
+  transition: .5s;
+}
 .projectTechnologies{
   display: flex;
+  
   gap: 10px;
 }
 .projectItem{

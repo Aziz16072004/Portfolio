@@ -1,7 +1,16 @@
 import { useEffect, useState } from "react";
 import 'aos/dist/aos.css'
 import Aos from 'aos'
+import { colors } from "@mui/material";
 function Resume() {
+    const handleMouseOver =(e,color)=>{
+        e.target.style.color = color;
+
+    }
+    const onMouseOut =(e)=>{
+        e.target.style.color = "";
+
+    }
     
     const content = {
         experience: {
@@ -49,12 +58,12 @@ function Resume() {
             name: "Skills",
             items: [
                 
-                { name: "JavaScript" , icon:"logo-javascript" },
-                { name: "React" , icon:"logo-react" },
-                { name: "CSS" , icon:"logo-css3" },
-                { name: "Node.js" , icon:"logo-nodejs" },
-                { name: "HTML" , icon:"logo-html5" },
-                { name: "Ardouino" , icon:"hardware-chip-outline" },
+                { name: "JavaScript" , icon:"logo-javascript" ,color:"yellow" },
+                { name: "React" , icon:"logo-react",color:"#58C4DC" },
+                { name: "CSS" , icon:"logo-css3" ,color:"#167DBE"},
+                { name: "Node.js" , icon:"logo-nodejs",color:"#87CF30" },
+                { name: "HTML" , icon:"logo-html5" ,color:"#E54C21"},
+                { name: "Ardouino" , icon:"hardware-chip-outline" ,color:"#2C97E2"},
             ],
         },
         aboutMe: {
@@ -120,7 +129,7 @@ function Resume() {
     ))}
      {resumeContent.name === "Skills" &&
     resumeContent.items.map((item,index)=>(
-        <div className="skillContantItem">
+        <div className="skillContantItem" onMouseOver={(e)=>handleMouseOver(e,item.color)} onMouseOut={onMouseOut}>
             <ion-icon name={item.icon}></ion-icon>
         </div>
     ))}

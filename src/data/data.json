@@ -4,7 +4,7 @@
         "img":"cap1",
         "name": "Social Media",
         "description":"A social media website is an online platform where users create, share, and interact with content, connect with others, and engage in discussions",
-        "link": {"codesrc" : "https://github.com/Aziz16072004/Social-Media"},
+        "link": {"codesrc" : "https://github.com/Aziz16072004/Social-Media","linksrc":"https://social-media-xd1j.onrender.com/"},
         "technologies":["React js","Node js" ,"Mongodb"],
         "status":"incomplete"
       },

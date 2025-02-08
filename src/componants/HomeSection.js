@@ -40,10 +40,11 @@ Driven by curiosity, I continuously explore new technologies to deliver innovati
            
             </div>
             <div className="socialMedia">
-            <a href="https://www.facebook.com/aziz.chaabani.357" ><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="" ><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="" ><ion-icon name="mail-outline"></ion-icon></a>
-            <a href="" ><ion-icon name="logo-pinterest"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/aziz-chaabani-6b238a18b/" ><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="https://www.facebook.com/aziz.chaabani.357" ><ion-icon name="logo-facebook" className="ionIcon"></ion-icon></a>
+            
+            <a href="https://x.com/AzizChaaba13652" ><ion-icon name="logo-twitter" className="ionIcon"></ion-icon></a>
+            <a href="mailto:mouhamedazizchaabani@gmail.com" ><ion-icon name="mail-outline" className="ionIcon"></ion-icon></a>
             </div>
         </div>
     )
