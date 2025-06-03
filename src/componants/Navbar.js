@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import "../App.css";
-import logo from "../imgs/logo.png";
 import { Link } from 'react-scroll';
 import 'aos/dist/aos.css'
 import Aos from 'aos'

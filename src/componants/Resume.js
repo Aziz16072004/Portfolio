@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import 'aos/dist/aos.css'
 import Aos from 'aos'
-import { colors } from "@mui/material";
 function Resume() {
     const handleMouseOver =(e,color)=>{
         e.target.style.color = color;

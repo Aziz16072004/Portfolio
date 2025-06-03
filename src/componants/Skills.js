@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import introImage from "../imgs/introImage.jpg"
 import Lines from "./Lines"
 import 'aos/dist/aos.css'
 import Aos from 'aos'
