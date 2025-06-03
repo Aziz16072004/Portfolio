@@ -39,6 +39,7 @@ export const Carousel = ({ data }) => {
             src={item}
             key={idx}
             className={slide === idx ? "slide" : "slide slide-hidden"}
+            alt="itemImg"
           />
         );
       })}

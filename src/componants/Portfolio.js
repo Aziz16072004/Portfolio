@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 import 'aos/dist/aos.css'
 import Aos from 'aos'
@@ -12,7 +12,6 @@ const imageMap = {
   cap1,
   donate1,
   hamina1,
-  ecommerce1,
   ecommerce1,
 };
 
@@ -37,7 +36,7 @@ const Portfolio = () => {
   style={{ background: item.status === "completed" ? "#33b249" : "#ffc300" }}
 >
   {item.status}
-</div>          <img src={imageMap[item.img]}/>
+</div>          <img src={imageMap[item.img]} alt='projectInformationImg'/>
         <div className='projectInformation'>
           <h2>{item.name}</h2>
           <p>{item.description}</p>

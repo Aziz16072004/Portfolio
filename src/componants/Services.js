@@ -1,7 +1,5 @@
 import Lines from "./Lines";
 import softwareImg from "../imgs/software-development.png";
-import developer from "../imgs/developer.png";
-import design from "../imgs/design.png";
 import robot from "../imgs/robot.png";
 import 'aos/dist/aos.css'
 import Aos from 'aos'
@@ -24,7 +22,7 @@ function Services(){
 
             <div className="serviceItem" data-aos="fade-up">
                 <div className="serviceImg">
-                    <img src={softwareImg}/>
+                    <img src={softwareImg} alt="softwareImg"/>
                 </div>
                 <h4>Web Development</h4>
                 <p>I offer professional web development services, creating responsive, user-friendly websites that meet your business needs. Whether it's a simple landing page or a complex web application, I build scalable, efficient solutions using modern technologies, ensuring high performance and a great user experience.</p>
@@ -32,7 +30,7 @@ function Services(){
             
             <div className="serviceItem"  data-aos="fade-up">
                 <div className="serviceImg">
-                    <img src={robot}/>
+                    <img src={robot} alt="robotImg"/>
                 </div>
                 <h4>Robotic</h4>
                 <p>I provide robotics solutions tailored to automate and optimize processes, combining cutting-edge technology with innovative design. From prototyping to final deployment, I develop intelligent systems that improve efficiency, precision, and functionality in various applications.</p>

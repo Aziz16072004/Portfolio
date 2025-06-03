@@ -1,5 +1,4 @@
 import introImage from "../imgs/profile_image-removebg-preview.png"
-import cercle from "../imgs/cercle.png"
 import Lines from "./Lines"
 import 'aos/dist/aos.css'
 import Aos from 'aos'
@@ -33,10 +32,8 @@ Driven by curiosity, I continuously explore new technologies to deliver innovati
 
             <div className="homeImage">
             <div className="introImageWrapper">
-                <img src={introImage} />
+                <img src={introImage} alt="introImageWrapper" />
             </div>
-                {/* <img className="cercle" src={cercle}/> */}
-
            
             </div>
             <div className="socialMedia">
