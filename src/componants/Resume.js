@@ -2,15 +2,6 @@ import { useEffect, useState } from "react";
 import 'aos/dist/aos.css'
 import Aos from 'aos'
 function Resume() {
-    const handleMouseOver =(e,color)=>{
-        e.target.style.color = color;
-
-    }
-    const onMouseOut =(e)=>{
-        e.target.style.color = "";
-
-    }
-    
     const content = {
         experience: {
             name: "Experience",
@@ -78,12 +69,21 @@ function Resume() {
             ]
         },
     };
+    const handleMouseOver =(e,color)=>{
+        e.target.style.color = color;
+
+    }
+    const onMouseOut =(e)=>{
+        e.target.style.color = "";
+
+    }
+    
 
     const [resumeContent, setResumeContent] = useState({});
 
     useEffect(() => {
-        setResumeContent(content.experience); // Default to experience
-    }, []);
+        setResumeContent(content.experience);
+    }, [content.experience]);
 
     const handleButtonClick = (section) => {
         setResumeContent(content[section]);
