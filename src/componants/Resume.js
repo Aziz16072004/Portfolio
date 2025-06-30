@@ -83,7 +83,7 @@ function Resume() {
 
     useEffect(() => {
         setResumeContent(content.experience);
-    }, [content.experience]);
+    }, []);
 
     const handleButtonClick = (section) => {
         setResumeContent(content[section]);

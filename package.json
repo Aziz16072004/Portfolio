@@ -1,6 +1,8 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": "https://aziz16072004.github.io/Portfolio",
+
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
