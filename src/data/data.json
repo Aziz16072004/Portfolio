@@ -1,6 +1,22 @@
 {
     "projects": [
       {
+        "img":"rentCarImg",
+        "name": "RentCar website",
+        "description":"A modern car rental website built with the MERN stack and Electron, allowing users to browse, reserve, and manage car rentals with an intuitive interface. Includes admin features for vehicle, booking, and user management",
+        "link": {"codesrc" : "https://github.com/Aziz16072004/Rental-Car"},
+        "technologies":["React js","Node js" ,"express ","mysql"],
+        "status":"incomplete"
+      },
+      {
+        "img":"rentCarDashboard",
+        "name": "Rental Car Admin Dashboard",
+        "description":"An admin dashboard for managing a car rental platform. Features include vehicle management, booking tracking, user control, and real-time updates, built with the MERN stack for efficient backend integration and a responsive UI",
+        "link": {"codesrc" : "https://github.com/Aziz16072004/RentalCar_dashboard"},
+        "technologies":["React js","Node js" ,"express ","mysql"],
+        "status":"incomplete"
+      },
+      {
         "img":"cap1",
         "name": "Social Media",
         "description":"A social media website is an online platform where users create, share, and interact with content, connect with others, and engage in discussions",

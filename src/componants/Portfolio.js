@@ -3,12 +3,16 @@ import { useEffect } from 'react';
 import 'aos/dist/aos.css'
 import Aos from 'aos'
 import data from "../data/data.json";
+import rentCarImg from '../imgs/rentCar.png';
+import rentCarDashboard from '../imgs/rentCarDashboard.png';
 import cap1 from '../imgs/cap1.png';
 import donate1 from '../imgs/donate1.png';
 import hamina1 from '../imgs/hamina1.png';
 import ecommerce1 from '../imgs/ecommerce1.png';
 import Lines from './Lines';
 const imageMap = {
+  rentCarDashboard,
+  rentCarImg,
   cap1,
   donate1,
   hamina1,

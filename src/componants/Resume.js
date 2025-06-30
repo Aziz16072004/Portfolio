@@ -60,7 +60,7 @@ function Resume() {
             name: "About Me",
             items:[
                 {name : "Name" , value:"Aziz Chaabani"},
-                {name : "Experience" , value:"0 year"},
+                {name : "Experience" , value:"2 years"},
                 {name : "Nationality" , value:"Tunisian"},
                 {name : "Freelance" , value:"Available"},
                 {name : "Phone" , value:"(216) 50 551 663"},
