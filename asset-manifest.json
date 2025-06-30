@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6506a204.css",
-    "main.js": "/static/js/main.15184d44.js",
-    "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
-    "static/media/cap1.png": "/static/media/cap1.b383bf9497eee91c7327.png",
-    "static/media/donate1.png": "/static/media/donate1.c59bd7cb4bd9ed163236.png",
-    "static/media/ecommerce1.png": "/static/media/ecommerce1.e6bc7c19ded022f0605d.png",
-    "static/media/rentCar.png": "/static/media/rentCar.028cf88793ff439bec3c.png",
-    "static/media/profile_image-removebg-preview.png": "/static/media/profile_image-removebg-preview.29d0fa724242645afc5a.png",
-    "static/media/rentCarDashboard.png": "/static/media/rentCarDashboard.b9ff8004167c0e37e833.png",
-    "static/media/hamina1.png": "/static/media/hamina1.572606b13e624f31d1c2.png",
-    "index.html": "/index.html",
-    "main.6506a204.css.map": "/static/css/main.6506a204.css.map",
-    "main.15184d44.js.map": "/static/js/main.15184d44.js.map",
-    "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
+    "main.css": "/Portfolio/static/css/main.6506a204.css",
+    "main.js": "/Portfolio/static/js/main.9fc1b660.js",
+    "static/js/453.419a5d54.chunk.js": "/Portfolio/static/js/453.419a5d54.chunk.js",
+    "static/media/cap1.png": "/Portfolio/static/media/cap1.b383bf9497eee91c7327.png",
+    "static/media/donate1.png": "/Portfolio/static/media/donate1.c59bd7cb4bd9ed163236.png",
+    "static/media/ecommerce1.png": "/Portfolio/static/media/ecommerce1.e6bc7c19ded022f0605d.png",
+    "static/media/rentCar.png": "/Portfolio/static/media/rentCar.028cf88793ff439bec3c.png",
+    "static/media/profile_image-removebg-preview.png": "/Portfolio/static/media/profile_image-removebg-preview.29d0fa724242645afc5a.png",
+    "static/media/rentCarDashboard.png": "/Portfolio/static/media/rentCarDashboard.b9ff8004167c0e37e833.png",
+    "static/media/hamina1.png": "/Portfolio/static/media/hamina1.572606b13e624f31d1c2.png",
+    "index.html": "/Portfolio/index.html",
+    "main.6506a204.css.map": "/Portfolio/static/css/main.6506a204.css.map",
+    "main.9fc1b660.js.map": "/Portfolio/static/js/main.9fc1b660.js.map",
+    "453.419a5d54.chunk.js.map": "/Portfolio/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6506a204.css",
-    "static/js/main.15184d44.js"
+    "static/js/main.9fc1b660.js"
   ]
 }
